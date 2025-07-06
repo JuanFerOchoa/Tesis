@@ -1,0 +1,22 @@
+Task Name;Start;Finish;Duration
+FASE I: DEFINICIÓN DEL PROBLEMA;2025-05-06;2025-05-12;7
+- Identificación del problema;2025-05-06;2025-05-12;7
+- Formulación de objetivos;2025-05-06;2025-05-12;7
+FASE II: REVISIÓN DOCUMENTAL;2025-05-13;2025-05-19;7
+- Revisión bibliográfica;2025-05-13;2025-05-19;7
+- Marco teórico sobre análisis financiero y ML;2025-05-13;2025-05-19;7
+FASE III: DISEÑO METODOLÓGICO;2025-05-20;2025-05-26;7
+- Diseño de instrumentos y metodología CRISP-DM;2025-05-20;2025-05-26;7
+- Definición de población y muestra;2025-05-27;2025-06-02;7
+FASE IV: DESARROLLO DE LA APLICACIÓN;2025-05-27;2025-06-02;7
+- Preparación de datos financieros;2025-06-03;2025-06-09;7
+- Desarrollo Backend (Flask + PostgreSQL);2025-06-03;2025-06-09;7
+- Entrenamiento de modelos ML;2025-06-10;2025-06-16;7
+- Desarrollo Frontend (React);2025-06-17;2025-06-23;7
+FASE V: VALIDACIÓN Y RESULTADOS;2025-06-17;2025-06-23;7
+- Evaluación de modelos y validación de precisión;2025-06-24;2025-06-30;7
+- Pruebas con usuarios y retroalimentación;2025-06-24;2025-06-30;7
+- Análisis de resultados y generación de reportes;2025-07-01;2025-07-07;7
+FASE VI: DOCUMENTACIÓN Y PRESENTACIÓN;2025-07-01;2025-07-07;7
+- Redacción final del informe;2025-07-08;2025-07-14;7
+- Presentación y defensa;2025-07-08;2025-07-14;7
