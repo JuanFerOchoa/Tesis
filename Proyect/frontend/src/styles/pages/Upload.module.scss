@@ -1,0 +1,103 @@
+.upload-container {
+  max-width: 600px;
+  margin: 10rem auto 3rem; 
+  padding: 3rem 2.5rem;
+  background: linear-gradient(145deg, #ffffff, #f1f4f9);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #1a202c;
+  }
+
+  input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:focus {
+      border-color: #3f8efc;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(63, 142, 252, 0.3);
+    }
+  }
+
+  .upload-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(90deg, #3f8efc, #336fcc);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+    &:disabled {
+      background: #a3bffa;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background: #2a5db8;
+      transform: scale(1.02);
+    }
+
+    &:active:not(:disabled) {
+      transform: scale(0.98);
+    }
+  }
+
+  .error {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #fee2e2;
+    border: 1px solid #feb2b2;
+    border-radius: 8px;
+    color: #b91c1c;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .success {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #d1fae5;
+    border: 1px solid #34d399;
+    border-radius: 8px;
+    color: #065f46;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .spinner {
+    margin-left: 0.75rem;
+    border: 4px solid #cbd5e1;
+    border-top: 4px solid #3f8efc;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

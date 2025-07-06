@@ -1,0 +1,116 @@
+.container {
+  max-width: 720px;
+  margin: 8rem auto;
+  padding: 1rem 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a202c;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #2d3748;
+}
+
+label {
+  font-weight: 600;
+  color: #4a5568;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1.8px solid #cbd5e0;
+  border-radius: 6px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 5px #3182ce;
+  }
+}
+
+/* Botón específico para analizar fraude */
+.btnAnalizar {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.65rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #3182ce;
+  color: #fff;
+  transition: background-color 0.25s ease;
+
+  &:hover:not(:disabled) {
+    background-color: #2b6cb0;
+  }
+
+  &:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+  }
+}
+
+/* Contenedor resultado con margen extra para que quede más abajo */
+.resultado {
+  margin-top: 3rem;
+  background-color: #edf2f7;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  color: #2d3748;
+
+  h4 {
+    margin-bottom: 1rem;
+
+    .badge {
+      font-size: 1rem;
+      padding: 0.4rem 0.75rem;
+    }
+
+    .bg-danger {
+      background-color: #e53e3e;
+    }
+
+    .bg-success {
+      background-color: #38a169;
+    }
+  }
+
+  h5 {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #cbd5e0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      span:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+}

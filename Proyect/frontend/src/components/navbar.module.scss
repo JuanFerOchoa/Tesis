@@ -1,0 +1,198 @@
+
+/*==============================*/
+
+
+.headerIconsContainer {
+    position: absolute;
+    z-index: 120;
+    width: 70%;
+    right: 0%;
+    margin-right: 1.5rem;
+    top: 1rem;
+}
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: white;
+  padding: 0.6rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.headerIcons i {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.headerIcons i:hover {
+  background-color: #d0f0ff;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.headerProfile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid hsl(228, 70%, 63%);
+  cursor: pointer;
+}
+
+.profileMenu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: hsl(228, 100%, 99%);
+  border-radius: 12px;
+  padding: 0;
+  width: 250px;
+  box-shadow: 1px 4px 12px rgba(0,0,0,0.1);
+  z-index: 9999;
+   border: 2px solid rgba(223, 221, 221, 0.904);
+}
+
+.profileTabs {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: var(--body-color);
+  padding: 0 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.tabButton {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px 0;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  text-align: center;
+}
+
+.tabButton:hover {
+  background-color: #e9f5f9;
+}
+
+.tabButton.active {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.tabContent {
+  display: none;
+  padding: 10px 0;
+}
+
+.tabContent.active {
+  display: block;
+}
+
+.profileMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profileMenu ul li {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #000;
+  transition: background-color 0.2s;
+}
+
+.profileMenu ul li:hover {
+  background-color:  #f1f1f1;
+;
+}
+
+.profileMenu ul li i {
+  font-size: 18px;
+  color: #00bcd4;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #f1f1f1;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+}
+
+.searchContainer input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.9rem;
+  width: 140px;
+}
+
+.searchContainer i {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: auto;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.menuIcon:hover {
+  background-color: #d0f0ff;
+}
+
+
+/*==============================*/
